@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import Spotify from "react-spotify-embed";
+
+import feedback from "../../img/feedback/feedback.png";
+
+import "../../styles/feedback.css";
 
 function Feedback() {
   return (
-    <div><h1>Feedback (Form Here)</h1>
-    <p>Have something nice to say? Otherwise, keep it to yourself. (Kidding)</p>
-    <p>Go Ahead We're Listening</p></div>
-  )
+    <div className="container-fluid">
+      <div className="d-flex mx-auto justify-content-center">
+        <a href="https://forms.gle/jsT5F47mAfg4zrYH9" target="_blank">
+          <img src={feedback} className="feedback" />
+        </a>
+      </div>
+    </div>
+  );
 }
 
-export default Feedback
+export default Feedback;

@@ -13,13 +13,16 @@ import saying2 from "../../img/homepage/saying2.png";
 import saying3 from "../../img/homepage/saying3.png";
 import saying4 from "../../img/homepage/saying4.png";
 import vinylhero from "../../img/homepage/vinylhero.png";
-import signuptoday from "../../img/homepage/signuptoday.png";
+import wax1 from "../../img/homepage/wax1.png";
+import wax2 from "../../img/homepage/wax2.png";
+import label from "../../img/homepage/label.png";
+import speaker from "../../img/homepage/speaker.png";
 
 
 //create your first component
 const Homepage = () => {
   return (
-    <body>
+    <>
       <div
         id="carouselExampleIndicators"
         className="carousel slide mx-auto carousel-fade"
@@ -60,20 +63,31 @@ const Homepage = () => {
         <img src={needle} className="needle" id="needle" />
       </div>
       <div className="container d-flex justify-content-center contentz" id="contentz">
-        <img src={saying} className="saying" id="saying" />
-        <img src={saying2} className="saying2" id="saying2" />
-        <img src={saying3} className="saying3" id="saying3" />
-        <img src={saying4} className="saying4" id="saying4" />
+        <a href="#wax"><img src={saying} className="saying float" id="saying" /></a>
+        <a href="#wax"><img src={saying2} className="saying2 float" id="saying2" /></a>
+        <a href="#wax"><img src={saying3} className="saying3 float" id="saying3" /></a>
+        <a href="#wax"><img src={saying4} className="saying4 float" id="saying4" /></a>
       </div>
       <div className="container-fluid mx-auto">
-        <a href="/signup">
+        <a href="#spinners">
         <img src={vinylhero} className="wax" id="wax" /></a>
       </div>
-      <div className="container-fluid mx-auto">
-        <a href="/signup">
-        <img src={signuptoday} className="signup" id="signup" /></a>
+      
+      <div className="container-fluid mx-auto justify-content-center" id="spinners">
+        <a href="#signup"><div className="d-flex mx-auto justify-content-center"><img src={wax1} className="spinning1"></img>
+        <img src={wax2} className="spinning2"></img></div></a>
+        
       </div>
-    </body>
+
+      <div className="container-fluid d-flex mx-auto justify-content-center bckgrnd" id="signup">
+        <div className="row">
+          <div className="col-4"><a href="/Signup"><img src={speaker} className="speaker"></img></a></div>
+          <div className="col-4"><img src={label} className="label"></img></div>
+          <div className="col-4"><a href="/Signup"><img src={speaker} className="speaker"></img></a></div>
+        </div>
+      </div>
+
+    </>
   );
 };
 

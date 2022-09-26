@@ -87,3 +87,71 @@
   .main {
     font-family: 'Poiret One', cursive;
   }
+
+  .sleeve {
+    width: 50%;
+    opacity: .9;
+  }
+
+  .spinner {
+    width: 50%;
+  }
+
+  .spinning1 {
+    width: 800px;
+    transition: transform 700ms;
+    margin-top: 175px;
+    margin-bottom: 175px;
+    margin-right: 50px;
+  }
+
+  .spinning1:hover {
+    transform: rotate(180deg);
+  }
+
+  .spinning2 {
+    width: 800px;
+    transition: transform 700ms;
+    margin-top: 175px;
+    margin-bottom: 175px;
+  }
+
+  .spinning2:hover {
+    transform: rotate(180deg);
+  }
+
+  .bckgrnd {
+    background-image: url(https://cdn.wallpapersafari.com/41/14/roXL9j.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    opacity: .9;
+  }
+
+  .label {
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    border-radius: 10%;
+    filter: grayscale(100%);
+    opacity: .50;
+    cursor: pointer;
+    transition: rotate 800ms ease-in, filter 900ms ease-in, opacity 900ms ease-in;
+  }
+
+  .label:hover{
+    rotate: 260deg;
+    filter: grayscale(0%);
+    opacity: .9;
+  }
+
+  .speaker {
+    width: 100%;
+    margin-top: 125px;
+    opacity: .9;
+    transition: scale 100ms;
+  }
+
+  .speaker:hover{
+    scale: 1.05;
+  }

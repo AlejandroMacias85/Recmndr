@@ -2,7 +2,6 @@ import React from "react";
 
 import "../../styles/profiles.css";
 
-
 import mellow from "../../img/profilepage/mellow.png";
 import unpretentious from "../../img/profilepage/unpretentious.png";
 import sophisticated from "../../img/profilepage/sophisticated.png";
@@ -23,6 +22,27 @@ import miles3 from "../../img/profilepage/miles3.jpg";
 import intense1 from "../../img/profilepage/intense1.jpg";
 import intense2 from "../../img/profilepage/intense2.jpg";
 import intense3 from "../../img/profilepage/intense3.jpg";
+import delivery1 from "../../img/profile-mellow/delivery1.png";
+import delivery2 from "../../img/profile-mellow/delivery2.png";
+import delivery3 from "../../img/profile-mellow/delivery3.png";
+import delivery4 from "../../img/profile-mellow/delivery4.png";
+import point1 from "../../img/profile-mellow/point1.png";
+import point2 from "../../img/profile-mellow/point2.png";
+import point3 from "../../img/profile-mellow/point3.png";
+import point4 from "../../img/profile-mellow/point4.png";
+import subscribe from "../../img/profile-mellow/subscribe.png";
+import receive from "../../img/profile-mellow/receive.png";
+import join from "../../img/profile-mellow/join.png";
+import features from "../../img/profile-mellow/features.png";
+import equalizer from "../../img/profile-mellow/equalizer.jpg";
+import notable from "../../img/profile-mellow/notable.jpg";
+import sampleintense from "../../img/profile-intense/sampleintense.png";
+import led from "../../img/profile-intense/led.jpg";
+import metallica from "../../img/profile-intense/metallica.png";
+import rage from "../../img/profile-intense/rage.jpg";
+import rush from "../../img/profile-intense/rush.jpg";
+import tool from "../../img/profile-intense/tool.png";
+import Spotify from "react-spotify-embed";
 
 export const Dbintense = () => {
   return (
@@ -42,7 +62,7 @@ export const Dbintense = () => {
             type="button"
             role="tab"
             aria-controls="v-pills-mellow"
-            aria-selected="true"
+            aria-selected="false"
           >
             <img src={mellow} className="instruments" />
             <strong id="lettercolor">m</strong>ellow
@@ -81,7 +101,7 @@ export const Dbintense = () => {
             type="button"
             role="tab"
             aria-controls="v-pills-intense"
-            aria-selected="false"
+            aria-selected="true"
           >
             <img src={intense} className="instruments" />
             <strong id="lettercolor">i</strong>ntense
@@ -112,12 +132,29 @@ export const Dbintense = () => {
           >
             {/* Code here */}
             <div className="container-fluid mellowcolor">
-              <div className="d-flex justify-content-center"><a href="/my-profile/mellow"><img src={otis1} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/mellow"><img src={otis2} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/mellow"><img src={otis3} className="imgcover" /></a></div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/mellow">
+                  <img src={otis1} className="imgcover" />
+                </a>
+              </div>
+              <div className="d-flex justify-content-center">
+                <span>&nbsp;</span>
+              </div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/mellow">
+                  <img src={otis2} className="imgcover" />
+                </a>
+              </div>
+              <div className="d-flex justify-content-center">
+                <span>&nbsp;</span>
+              </div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/mellow">
+                  <img src={otis3} className="imgcover" />
+                </a>
+              </div>
             </div>
+
             {/* Mellow End */}
           </div>
           {/* Unpretentious Page */}
@@ -130,15 +167,31 @@ export const Dbintense = () => {
             {" "}
             {/* Code here */}
             <div className="container-fluid" id="unpretcol">
-              <div className="d-flex justify-content-center"><a href="/my-profile/unpretentious"><img src={woodstock1} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/unpretentious"><img src={woodstock2} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/unpretentious"><img src={woodstock3} className="imgcover" /></a></div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/unpretentious">
+                  <img src={woodstock1} className="imgcover" />
+                </a>
+              </div>
+              <div className="d-flex justify-content-center">
+                <span>&nbsp;</span>
+              </div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/unpretentious">
+                  <img src={woodstock2} className="imgcover" />
+                </a>
+              </div>
+              <div className="d-flex justify-content-center">
+                <span>&nbsp;</span>
+              </div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/unpretentious">
+                  <img src={woodstock3} className="imgcover" />
+                </a>
+              </div>
             </div>
             {/* Unpretentious End */}
           </div>
-           {/* Sophisticated Page */}
+          {/* Sophisticated Page */}
           <div
             className="tab-pane fade"
             id="v-pills-sophisticated"
@@ -147,13 +200,29 @@ export const Dbintense = () => {
           >
             {/* Code here */}
             <div className="container-fluid" id="sophiscol">
-            <div className="container-fluid mellowcolor">
-              <div className="d-flex justify-content-center"><a href="/my-profile/sophisticated"><img src={miles1} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/sophisticated"><img src={miles2} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/sophisticated"><img src={miles3} className="imgcover" /></a></div>
-            </div>
+              <div className="container-fluid mellowcolor">
+                <div className="d-flex justify-content-center">
+                  <a href="/my-profile/sophisticated">
+                    <img src={miles1} className="imgcover" />
+                  </a>
+                </div>
+                <div className="d-flex justify-content-center">
+                  <span>&nbsp;</span>
+                </div>
+                <div className="d-flex justify-content-center">
+                  <a href="/my-profile/sophisticated">
+                    <img src={miles2} className="imgcover" />
+                  </a>
+                </div>
+                <div className="d-flex justify-content-center">
+                  <span>&nbsp;</span>
+                </div>
+                <div className="d-flex justify-content-center">
+                  <a href="/my-profile/sophisticated">
+                    <img src={miles3} className="imgcover" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           {/* Intense Page */}
@@ -165,12 +234,159 @@ export const Dbintense = () => {
           >
             {/* Code here */}
             <div className="container-fluid intnscol">
-            <div className="d-flex justify-content-center"><a href="/my-profile/intense"><img src={intense1} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/intense"><img src={intense2} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/intense"><img src={intense3} className="imgcover" /></a></div>
+              <div className="d-flex justify-content-center">
+                <a href="#intro">
+                  <img src={intense1} className="imgcover" />
+                </a>
+              </div>
+              <div className="d-flex justify-content-center">
+                <span>&nbsp;</span>
+              </div>
+              <div className="d-flex justify-content-center">
+                <a href="#intro">
+                  <img src={intense2} className="imgcover" />
+                </a>
+              </div>
+              <div className="d-flex justify-content-center">
+                <span>&nbsp;</span>
+              </div>
+              <div className="d-flex justify-content-center">
+                <a href="#intro">
+                  <img src={intense3} className="imgcover" />
+                </a>
+              </div>
             </div>
+
+            {/* intense edit start */}
+
+            <div className="d-flex mx-auto justify-content-center">
+            <a href="#intro"><img src={intense} className="iconics" id="iconics" /></a>
+            </div>
+
+            <div className="d-flex justify-content-center" id="intro">
+              <a href="#records"> <img src={sampleintense} className="delivery" /></a>
+            </div>
+
+            <div className="d-flex justify-content-center" id="records">
+              <a href="#covers"><img src={receive} className="receive" /></a>
+            </div>
+
+            <div className="card-deck d-flex albumz" id="covers">
+              <div className="card">
+                <img className="card-img-top" src={led} alt="Card image cap" />
+                <div className="card-body">
+                  <p className="card-text">
+                    Led Zeppelin
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">Led Zeppelin</small>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <img className="card-img-top" src={metallica} alt="Card image cap" />
+                <div className="card-body">
+                  <p className="card-text">
+                    Metallica
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">...And Justice For All</small>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <img className="card-img-top" src={rage} alt="Card image cap" />
+                <div className="card-body">
+                  <p className="card-text">
+                    Rage Against The Machine
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">Rage Against The Machine</small>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <img className="card-img-top" src={rush} alt="Card image cap" />
+                <div className="card-body">
+                  <p className="card-text">
+                    Rush
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">Moving Pictures</small>
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <img className="card-img-top" src={tool} alt="Card image cap" />
+                <div className="card-body">
+                  <p className="card-text">
+                    Tool
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">Fear Inoculum</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="d-flex mx-auto justify-content-center">
+              <a href="#soul">
+                <img src={notable} className="notable"></img>
+              </a>
+            </div>
+
+            <div className="d-flex mx-auto justify-content-center spotify">
+              <Spotify link="https://open.spotify.com/track/4OMu5a8sFpcRCPCcsoEaov?si=1cdac05e860a4d33" id="zeppelin"></Spotify>
+              <Spotify link="https://open.spotify.com/track/3IolN0Ae207i0Fr9IHuNbu?si=8797d1f5fb1a4ed5" id="metallica"></Spotify>
+              <Spotify link="https://open.spotify.com/track/6ZU9RJIZ0fNaFuQM57bDIA?si=ea6baa047a8e4501" id="rage"></Spotify>
+              <Spotify link="https://open.spotify.com/track/3lpDrxUkr0tIe1kmJvdK7d?si=1c338e2b213541ce" id="rush"></Spotify>
+              <Spotify link="https://open.spotify.com/track/03sEzk1VyrUZSgyhoQR0LZ?si=e4c67836571c4d46" id="tool"></Spotify>
+            </div>
+
+            <div className="d-flex justify-content-center">
+              <img src={equalizer} className="equalizer" />
+            </div>
+
+            <div className="d-flex justify-content-center">
+              <img src={join} className="spacer" id="soul" />  
+            </div>
+
+            <div className="d-flex mx-auto justify-content-center">
+              <a href="#invader">
+              <img src={delivery1} className="del" />
+              <img src={delivery2} className="del" />
+              <img src={delivery3} className="del" />
+              <img src={delivery4} className="del" /></a>
+            </div>
+
+            <div className="d-flex justify-content-center">
+              <img src={equalizer} className="equalizer" />
+            </div>
+
+            <div className="d-flex justify-content-center">
+              <img src={features} className="spacer" id="invader" />
+            </div>
+
+            <div className="d-flex mx-auto justify-content-center">
+            <a href="#join">
+              <img src={point1} className="points" />
+              <img src={point2} className="points" />
+              <img src={point3} className="points" />
+              <img src={point4} className="points" />
+              </a>
+            </div>
+
+            <div className="d-flex justify-content-center">
+              <img src={equalizer} className="equalizer" />
+            </div>
+
+            <div className="d-flex justify-content-center" >
+              <a href="/checkout">
+                <img src={subscribe} className="sub" id="join"/></a>
+            </div>
+
+            {/* intense end */}
+
           </div>
           {/* Contemporary Page */}
           <div
@@ -181,11 +397,27 @@ export const Dbintense = () => {
           >
             {/* Code here */}
             <div className="container-fluid" id="sophiscol">
-            <div className="d-flex justify-content-center"><a href="/my-profile/contemporary"><img src={deejay1} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/contemporary"><img src={deejay2} className="imgcover" /></a></div>
-              <div className="d-flex justify-content-center"><span>&nbsp;</span></div>
-              <div className="d-flex justify-content-center"><a href="/my-profile/contemporary"><img src={deejay3} className="imgcover" /></a></div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/contemporary">
+                  <img src={deejay1} className="imgcover" />
+                </a>
+              </div>
+              <div className="d-flex justify-content-center">
+                <span>&nbsp;</span>
+              </div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/contemporary">
+                  <img src={deejay2} className="imgcover" />
+                </a>
+              </div>
+              <div className="d-flex justify-content-center">
+                <span>&nbsp;</span>
+              </div>
+              <div className="d-flex justify-content-center">
+                <a href="/my-profile/contemporary">
+                  <img src={deejay3} className="imgcover" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
